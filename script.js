@@ -101,3 +101,6 @@ const arr = strArray.split(" ");
 const arrs = arr.join(" ");
 console.log("array:", arr);
 console.log("array:", arrs);
+
+const sum = (a, b) => a + b;
+console.log(sum(2, 3));
