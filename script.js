@@ -1,80 +1,36 @@
-// swapping two numbers using temp variable
-// let a = prompt("enter new number");
-// let b = prompt("Enter new number agin");
-// temp = a;
-// a = b;
-// b = temp;
+let swap1 = prompt("enter new number");
+let swap2 = prompt("Enter new number agin");
+let temp;
+temp = swap1;
+swap1 = swap2;
+swap2 = temp;
 
-// console.log(`number exchanged ${a}`);
-// console.log(`number exchanged ${b}`);
+console.log(`number exchanged ${swap1}`);
+console.log(`number exchanged ${swap2}`);
 
-//JavaScript program to swap two variables without Temp
+let a = prompt("Enter the first variable: ");
+let b = prompt("Enter the second variable: ");
+[a, b] = [b, a];
 
-// let a = prompt("Enter the first variable: ");
-// let b = prompt("Enter the second variable: ");
-// [a, b] = [b, a];
+console.log(`The value of a after swapping: ${a}`);
+console.log(`The value of b after swapping: ${b}`);
 
-// console.log(`The value of a after swapping: ${a}`);
-// console.log(`The value of b after swapping: ${b}`);
-
-// Finding Max from an Array
-// const array = [10,20,30,40];
-// const filter = Math.max(...array);
-// console.log(filter);
-
-// Finding Minimum and Maximum from an array
-const array = [10, 100, 5, 6, 1, 200, 1000];
-const max = Math.max(...array);
-const min = Math.min(...array);
+const genArray = [10, 100, 5, 6, 1, 200, 1000];
+const max = Math.max(...genArray);
+const min = Math.min(...genArray);
 console.log(`Maximum: ${max}`, `Minimum: ${min}`);
-// Tabele Printing
 let num = parseInt(prompt("Enter Number For Table"));
 
 for (let i = 1; i <= 10; i++) {
   let result = i * num;
   console.log(`${result} = ${i} * ${num}`);
 }
-// even odd number
 const number = [2, 4, 6, 7, 9, 11];
 const even = number.filter((arr) => arr % 2 === 0);
 console.log(even);
 const odd = number.filter((arr) => arr % 2 !== 0);
 console.log(odd);
 
-// Star Printing
-let n = 5; // row or column count
-// defining an empty string
-let string = "";
-
-for (let i = 0; i < n; i++) {
-  // external loop
-  for (let j = 0; j < n; j++) {
-    // internal loop
-    string += "*";
-  }
-  // newline after each row
-  string += "\n";
-}
-// printing the string
-console.log(string);
-// Start Printing Pattern * ** *** **** ******
-let l = 10; // row or column count
-// defining an empty string
-let strings = "";
-
-for (let i = 0; i < l; i++) {
-  // external loop
-  for (let j = 0; j < i; j++) {
-    // internal loop
-    strings += "*";
-  }
-  // newline after each row
-  strings += "\n";
-}
-// printing the string
-console.log(strings);
-
-// program to check if a number is prime or not
 const primeNumber = parseInt(prompt("Enter a positive number: "));
 let isPrime = true;
 
